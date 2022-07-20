@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Contact page</title>
+  </head>
+  <body>
+    <form action="./contact.html" method="post">
+      <label for="fname">First name:</label>
+      <input
+        type="text"
+        placeholder="Enter your first name"
+        id="fname"
+        name="fname"
+        required/>
+      <br/>
+
+      <label for="lname">Last name:</label>
+      <input
+        type="text"
+        placeholder="Enter your last name"
+        id="lname"
+        name="lname"
+        required/>
+      <br/>
+
+      <label for="email">E-mail:</label>
+      <input type="email" pattern=".+@gmail\.com" placeholder="Enter your Email" id="email" name="email" required/>
+      <br/>
+
+      <label for="telephone">Telephone:</label>
+      <input
+        type="tel"
+        placeholder="Enter your phone no"
+        id="telephone"
+        name="telephone"
+        minlength="10"
+        maxlength="10"
+        title="Must contain only numbers(10)"
+        required/>
+      <br/>
+
+      <label for="address">Address:
+        <input type="address" placeholder="Street" id="address" name="address" required/>
+        <input type="number" placeholder="Number" name="address" required/>
+        <input type="address" placeholder="City" name="address" required/>
+        <input type="address" placeholder="County" name="address" required/>
+        <input type="address" placeholder="Zip code" name="address" required/>
+      </label>
+      <br/>
+
+      <textarea rows="4" cols="25" placeholder="Enter your message please" id="textarea" name="textarea"></textarea>
+      <br/>
+
+      <input type="submit" value="Submit"/>
+    </form>
+
+    <a href="http://127.0.0.1:5500/cv.html" target="_blank">Main page</a>
+  </body>
+</html>
