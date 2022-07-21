@@ -1,28 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8"/>
-    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Challenge</title>
   </head>
   <body>
-    <img src="./image.jpg" alt="My photo"/>
+    <header>
+      <h1>Home page
+        <img src="./mb.jpg" alt="My logo" width="50" height="50">
+      </h1>
+    </header>
+
+    <picture>
+      <source media="(min-width: 801px)" srcset="./image1.jpg" />
+      <source media="(max-width: 800px)" srcset="./image.jpg" />
+      <img src="./image.jpg" alt="My photo" width="450" height="400" />
+    </picture>
+
     <p>Hello,</p>
     <p>
       My name is Malina and I am a highly organized student, I like to structure
       my day and when I start working on a task, I like to accomplish it.
     </p>
+
     <ul>
-      <h1>Info:</h1>
+      <h2>Info:</h2>
       <li>Contact: 0722815457</li>
       <li>Email: malinabucur13@gmail.com</li>
-      <li>Address: Calea Dorobantilor 105, Cluj-Napoca, Romania</li>
+      <li>Address: Calea Dorobantilor 105, Cluj-Napoca, Cluj, Romania</li>
     </ul>
+
+    <video controls src="./video.mp4" autoplay loop></video>
+    <br />
+
     <a href="http://127.0.0.1:5500/experience.html" target="_blank">Experience</a>
     <a href="http://127.0.0.1:5500/studies.html" target="_blank">Studies</a>
     <a href="http://127.0.0.1:5500/resume.html" target="_blank">My Resume</a>
     <a href="http://127.0.0.1:5500/login.html" target="_blank">Login</a>
     <a href="http://127.0.0.1:5500/contact.html" target="_blank">Contact</a>
+    <br />
+
+    <footer>
+      <h4>Follow me on: 
+        <a href="https://www.facebook.com/bucur.malina/" target="_blank">Facebook</a> 
+        <a href="https://www.instagram.com/bucur.malina/" target="_blank">Instagram</a>
+      </h4> 
+    </footer>
   </body>
 </html>
