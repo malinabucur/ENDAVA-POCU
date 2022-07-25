@@ -4,16 +4,30 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="style.css" rel="stylesheet" />
     <title>Login page</title>
   </head>
   <body>
+    <h1>Login form</h1>
     <form action="./login.html" method="post">
+      <label for="email">E-mail (@gmail.com):</label>
+      <input
+        type="email"
+        pattern=".+@gmail\.com"
+        placeholder="Enter email"
+        name="email"
+        id="email"
+        required
+      />
+      <br />
+
       <label for="username">Username:</label>
       <input
         type="username"
         placeholder="Enter Username"
         name="username"
-        required/>
+        required
+      />
       <br />
 
       <label for="password">Password:</label>
@@ -23,26 +37,8 @@
         name="password"
         pattern="(?=.*[A-Z]).{8,}"
         title="The password must contain at least one sign, one uppercase letter and at least 8 characters"
-        required/>
-      <br />
-
-      <label for="email">E-mail (@gmail.com):</label>
-      <input
-        type="email"
-        pattern=".+@gmail\.com"
-        placeholder="Enter email"
-        name="email"
-        id="email"
-        required/>
-      <br />
-
-      <label for="emailConfirm">E-mail confirmation:</label>
-      <input
-        type="email"
-        pattern=".+@gmail\.com"
-        placeholder="Enter your email again"
-        name="emailConfirm"
-        id="emailConfirm"/>
+        required
+      />
       <br />
 
       <button type="submit">Login</button>
@@ -51,6 +47,8 @@
       <br />
     </form>
 
-    <a href="http://127.0.0.1:5500/index.html" target="_blank">Main page</a>
+    <a id="link" href="http://127.0.0.1:5500/index.html" target="_blank"
+      >Home page</a
+    >
   </body>
 </html>
