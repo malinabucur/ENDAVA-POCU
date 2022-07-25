@@ -1,37 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8"/>
-    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="style.css" rel="stylesheet" />
     <title>Contact page</title>
   </head>
-  <body>
-    <form action="./contact.html" method="post">
-      <label for="fname">First name:</label>
+  <body class="contact-form">
+    <h1 class="contact-label">Contact form:</h1>
+    <p class="contact-label">Please fill out the required informations</p>
+    <form action="./contact.html" method="post" class="form1">
+      <label class="contact-label" for="fname">First name:</label>
       <input
+        class="set-contact"
         type="text"
         placeholder="Enter your first name"
         id="fname"
         name="fname"
-        required/>
-      <br/>
+        required
+      />
+      <br />
 
-      <label for="lname">Last name:</label>
+      <label class="contact-label" for="lname">Last name:</label>
       <input
+        class="set-contact"
         type="text"
         placeholder="Enter your last name"
         id="lname"
         name="lname"
-        required/>
-      <br/>
+        required
+      />
+      <br />
 
-      <label for="email">E-mail (@gmail.com):</label>
-      <input type="email" pattern=".+@gmail\.com" placeholder="Enter your Email" id="email" name="email" required/>
-      <br/>
-
-      <label for="telephone">Telephone:</label>
+      <label class="contact-label" for="email">E-mail (@gmail.com):</label>
       <input
+        class="set-contact"
+        type="email"
+        pattern=".+@gmail\.com"
+        placeholder="Enter your Email"
+        id="email"
+        name="email"
+        required
+      />
+      <br />
+
+      <label class="contact-label" for="emailConfirm"
+        >E-mail confirmation:</label
+      >
+      <input
+        class="set-contact"
+        type="email"
+        pattern=".+@gmail\.com"
+        placeholder="Enter your Email again"
+        name="emailConfirm"
+        id="emailConfirm"
+      />
+      <br />
+
+      <label class="contact-label" for="telephone">Telephone:</label>
+      <input
+        class="set-contact"
         type="tel"
         placeholder="Enter your phone no"
         id="telephone"
@@ -39,24 +68,70 @@
         minlength="10"
         maxlength="10"
         title="Must contain only numbers(10)"
-        required/>
-      <br/>
+        required
+      />
+      <br />
 
-      <label for="address">Address:
-        <input type="address" placeholder="Street" id="address" name="address" required/>
-        <input type="number" placeholder="Number" name="address" required/>
-        <input type="address" placeholder="City" name="address" required/>
-        <input type="address" placeholder="County" name="address" required/>
-        <input type="address" placeholder="Zip code" name="address" required/>
+      <label class="contact-label" for="address"
+        >Address:
+        <input
+          class="set-contact"
+          type="address"
+          placeholder="Street"
+          id="address"
+          name="address"
+          required
+        /><br />
+        <input
+          class="set-contact"
+          type="number"
+          placeholder="Number"
+          id="address"
+          name="address"
+          required
+        /><br />
+        <input
+          class="set-contact"
+          type="address"
+          placeholder="City"
+          id="address"
+          name="address"
+          required
+        /><br />
+        <input
+          class="set-contact"
+          type="address"
+          placeholder="County"
+          id="address"
+          name="address"
+          required
+        /><br />
+        <input
+          class="set-contact"
+          type="address"
+          placeholder="Zip code"
+          id="address"
+          name="address"
+          required
+        />
       </label>
-      <br/>
+      <br />
 
-      <textarea rows="4" cols="25" placeholder="Enter your message please" id="textarea" name="textarea"></textarea>
-      <br/>
+      <textarea
+        class="set-contact"
+        rows="4"
+        cols="25"
+        placeholder="Enter your message please"
+        id="textarea"
+        name="textarea"
+      ></textarea>
+      <br />
 
-      <input type="submit" value="Submit"/>
+      <input type="submit" value="Submit" />
     </form>
 
-    <a href="http://127.0.0.1:5500/index.html" target="_blank">Main page</a>
+    <a id="link" href="http://127.0.0.1:5500/index.html" target="_blank"
+      >Home page</a
+    >
   </body>
 </html>
