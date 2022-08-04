@@ -1,62 +1,141 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
+    <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="style.css" rel="stylesheet" />
-    <title>Challenge</title>
+    <title>Mălina Bucur</title>
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
   </head>
   <body>
-    <header>
-      <h1 class="home">
-        Home page
-        <img src="./mb.jpg" alt="My logo" width="50" height="50" id="logo" />
-      </h1>
-    </header>
-
-    <picture>
-      <source media="(min-width: 801px)" srcset="./image1.jpg" />
-      <source media="(max-width: 800px)" srcset="./image.jpg" />
-      <img src="./image.jpg" alt="My photo" width="550" height="500" />
-    </picture>
-
-    <p class="main">
-      Hello,
-      <br />
-      My name is Malina and I am a highly organized student, I like to structure
-      my day and when I start working on a task, I like to accomplish it.
-    </p>
-
-    <ul class="details">
-      <h2>Info:</h2>
-      <li>Contact: 0722815457</li>
-      <li>Email: malinabucur13@gmail.com</li>
-      <li>Address: Calea Dorobantilor 105, Cluj-Napoca, Cluj, Romania</li>
-    </ul>
-
-    <video controls src="./video.mp4" autoplay loop></video>
-    <br />
-
-    <a href="http://127.0.0.1:5500/experience.html" target="_blank"
-      >Experience</a
+    <div
+      data-collapse="medium"
+      data-animation="default"
+      data-duration="400"
+      role="banner"
+      class="navhome inner"
     >
-    <a href="http://127.0.0.1:5500/studies.html" target="_blank">Studies</a>
-    <a href="http://127.0.0.1:5500/resume.html" target="_blank">My Resume</a>
-    <a href="http://127.0.0.1:5500/login.html" target="_blank">Login</a>
-    <a href="http://127.0.0.1:5500/contact.html" target="_blank">Contact</a>
-    <br />
+      <div class="div-block">
+        <a href="index.html" aria-current="page">
+          <img class="nav-name" src="./images/mb.jpg" alt="logo" />
+        </a>
+        <nav role="navigation" class="nav-menu">
+          <a href="resume.html" class="nav-link w-nav-link">RESUME</a>
+          <a href="studies.html" class="nav-link w-nav-link">STUDIES</a>
+          <a href="experience.html" class="nav-link w-nav-link">EXPERIENCE</a>
+          <a href="mailto:malinabucur13@gmail.com" class="nav-link w-nav-link"
+            >Contact</a
+          >
+        </nav>
+      </div>
+    </div>
+    <div
+      data-collapse="medium"
+      data-animation="default"
+      data-duration="400"
+      role="banner"
+      class="navhome"
+    >
+      <div>
+        <a href="index.html" aria-current="page" class="brand">
+          <img class="nav-name" src="./images/mb.jpg" alt="logo" />
+        </a>
+        <nav role="navigation" class="nav-menu">
+          <a href="resume.html" class="nav-link w-nav-link">RESUME</a>
+          <a href="studies.html" class="nav-link w-nav-link">STUDIES</a>
+          <a href="experience.html" class="nav-link w-nav-link">EXPERIENCE</a>
+          <a href="mailto:malinabucur13@gmail.com" class="nav-link w-nav-link"
+            >Contact</a
+          >
+        </nav>
+      </div>
+    </div>
+    <div class="section-main">
+      <div class="wrapper-title">
+        <h2 class="h1">MĂLINA BUCUR</h2>
+        <div class="vertical-divider"></div>
+        <h3>frontend developer</h3>
+      </div>
+    </div>
+
+    <div class="section-intro">
+      <div class="container">
+        <h1 class="h3">Hello,</h1>
+        <div class="text-body">
+          My name is Mălina and I’m a student at Technical University of
+          Cluj-Napoca in 3rd year bachelor degree. I am a highly organized
+          student, I like to structure my day and when I start working on a
+          task, I like to accomplish it.
+        </div>
+        <div class="text-body">
+          I get to design this site, which is my personal CV.
+        </div>
+        <div class="text-body">
+          I'm also a frontend developer at ENDAVA in Cluj-Napoca.
+        </div>
+        <div class="text-body">Take a look at my resume. Thanks!</div>
+      </div>
+    </div>
+    <div class="container buttons">
+      <div class="div-block">
+        <a href="resume.html" class="box gray c-button">RESUME</a>
+      </div>
+    </div>
+
+    <div class="container buttons">
+      <h1 class="h3">about me section</h1>
+      <div class="port-container">
+        <a href="studies.html" class="box red c-button">STUDIES</a>
+        <a href="experience.html" class="box cyan c-button">EXPERIENCE</a>
+        <a href="contact.html" class="box green c-button">CONTACT</a>
+      </div>
+    </div>
+
+    <div class="text-body">
+      Here you have a contact form if you want to know more
+    </div>
+    <div class="form">
+      <a href="contact.html" class="form">Contact form</a>
+    </div>
 
     <footer>
-      <h4>
-        Follow me on:
-        <a href="https://www.facebook.com/bucur.malina/" target="_blank"
-          >Facebook</a
-        >
-        <a href="https://www.instagram.com/bucur.malina/" target="_blank"
-          >Instagram</a
-        >
-      </h4>
+      <a
+        class="social-media"
+        href="https://www.facebook.com/bucur.malina/"
+        target="_blank"
+      >
+        <ion-icon name="logo-facebook"></ion-icon>
+      </a>
+      <a
+        class="social-media"
+        href="https://www.instagram.com/bucur.malina/"
+        target="_blank"
+      >
+        <ion-icon name="logo-instagram"></ion-icon>
+      </a>
+      <a
+        class="social-media"
+        href="https://www.linkedin.com/in/malina-bucur-600095238/"
+        target="_blank"
+      >
+        <ion-icon name="logo-linkedin"></ion-icon>
+      </a>
+      <a
+        class="social-media"
+        href="https://github.com/malinabucur/ENDAVA-POCU"
+        target="_blank"
+      >
+        <ion-icon name="logo-github"></ion-icon>
+      </a>
     </footer>
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
   </body>
 </html>
