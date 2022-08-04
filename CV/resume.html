@@ -4,24 +4,39 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="style.css" rel="stylesheet" />
-    <title>My Resume</title>
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
+    <title>Resume | Mălina Bucur</title>
   </head>
   <body>
-    <h1>My Resume:</h1>
-    <p>Hi, here you will find my resume for more details</p>
-    <embed src="./CV_BucurMalina.pdf" width="750" height="750" />
-    <br />
+    <div
+      data-collapse="medium"
+      data-animation="default"
+      data-duration="400"
+      role="banner"
+      class="navhome inner w-nav"
+    >
+      <div>
+        <a href="index.html" class="brand">
+          <img class="nav-name" src="./images/mb.jpg" alt="logo" />
+        </a>
+        <nav role="navigation" class="nav-menu">
+          <a href="resume.html" class="nav-link w-nav-link">resume</a>
+          <a href="studies.html" class="nav-link w-nav-link">studies</a>
+          <a href="experience.html" class="nav-link w-nav-link">experience</a>
+          <a href="mailto:annadtinaclery@gmail.com" class="nav-link w-nav-link"
+            >Contact</a
+          >
+        </nav>
+      </div>
+    </div>
+    <div class="section-project">
+      <h3 class="h2">My Resume</h3>
 
-    <style>
-      body {
-        background-image: url("./background1.jpg");
-        background-repeat: no-repeat;
-        background-attachment: fixed;
-        background-size: cover;
-      }
-    </style>
-
-    <a href="http://127.0.0.1:5500/index.html" target="_blank">Home page</a>
+      <div class="w-container">
+        <h1 class="h3">Hi, here you will find my resume for more details</h1>
+        <iframe src="./pdf/CV_BucurMalina.pdf" id="mycv"></iframe>
+        <div class="divider post-project"></div>
+      </div>
+    </div>
   </body>
 </html>
