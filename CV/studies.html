@@ -4,32 +4,54 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="style.css" rel="stylesheet" />
-    <title>Studies</title>
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
+    <title>Studies | Mălina Bucur</title>
   </head>
   <body>
-    <h1>STUDIES:</h1>
-    <p>
-      <b class="bold-type">University:</b> Technical University of Cluj-Napoca
-    </p>
-    <p>
-      <b>Faculty:</b> Faculty of Electronics, Telecommunications and Information
-      Technology
-    </p>
-    <p><b>Year of study:</b> 3rd year student</p>
-    <p><b>Period:</b> 2019-present</p>
-    <br />
-
-    <style>
-      body {
-        background-image: url("./utcn.jpg");
-        background-repeat: no-repeat;
-        background-size: 1500px;
-      }
-    </style>
-
-    <a id="link" href="http://127.0.0.1:5500/index.html" target="_blank"
-      >Home page</a
+    <div
+      data-collapse="medium"
+      data-animation="default"
+      data-duration="400"
+      role="banner"
+      class="navhome inner w-nav"
     >
+      <div>
+        <a href="index.html" class="brand">
+          <img class="nav-name" src="./images/mb.jpg" alt="logo" />
+        </a>
+        <nav role="navigation" class="nav-menu">
+          <a href="studies.html" class="nav-link w-nav-link">STUDIES</a>
+          <a href="resume.html" class="nav-link w-nav-link">resume</a>
+          <a href="experience.html" class="nav-link w-nav-link">experience</a>
+          <a href="mailto:annadtinaclery@gmail.com" class="nav-link w-nav-link"
+            >Contact</a
+          >
+        </nav>
+      </div>
+    </div>
+    <div class="section-project">
+      <h3 class="h2">STUDIES</h3>
+
+      <div class="w-container">
+        <h1 class="h3">Technical University of Cluj-Napoca</h1>
+        <h6>
+          Faculty of Electronics, Telecommunications and Information Technology
+        </h6>
+        <h5>Specialization: Applied Electronics ENG</h5>
+        <h5>3rd year bachelor degree</h5>
+        <h5>Period: 10.2019 - Present</h5>
+        <img id="study" src="./images/utcn.png" alt="utcn logo" />
+      </div>
+
+      <hr class="horizontal-divider" />
+
+      <div class="w-container">
+        <h1 class="h3">Theoretical Highschool "Pavel Dan"</h1>
+        <h1 class="h3">Campia Turzii</h1>
+        <h6>Natural sciences</h6>
+        <h5>Period: 09.2015 - 06.2019</h5>
+        <img id="study" src="./images/pd.png" alt="highschool" />
+      </div>
+    </div>
   </body>
 </html>
