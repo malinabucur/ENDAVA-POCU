@@ -6,7 +6,7 @@ body {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-/* wrapper-title */
+/* wrapper-title -> div with name and work */
 .wrapper-title {
   padding: 50px;
   width: 75%;
@@ -15,18 +15,15 @@ body {
   text-align: center;
 }
 
-/* text-body */
-.text-body {
-  font-size: 14px;
-  line-height: 50px;
-  text-align: center;
-  letter-spacing: 1px;
-  color: #464646;
-  padding: 2px;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+/* vertical divider between name and work */
+.vertical-divider {
+  width: 3px;
+  height: 40px;
+  margin: auto;
+  background-color: rgb(66, 63, 63);
 }
 
-/* section-main */
+/* section-main -> top of the page*/
 .section-main {
   position: relative;
   z-index: 999;
@@ -39,51 +36,34 @@ body {
   background-attachment: scroll;
 }
 
-/* vertical divider */
-.vertical-divider {
-  width: 3px;
-  height: 40px;
-  margin: auto;
-  background-color: rgb(66, 63, 63);
-}
-
-/* horizontal divider */
-.horizontal-divider {
-  background-color: black;
-  position: relative;
-  margin-top: 70px;
-  margin-bottom: 70px;
-  height: 3px;
-  width: 1200px;
-}
-
-/* section intro */
+/* section intro -> div intro about me*/
 .section-intro {
   margin: auto;
   padding: 50px;
-}
-
-/* section project */
-.section-project {
-  margin-top: 100px;
-  margin-bottom: 100px;
-  padding-top: 100px;
-}
-
-/* container and buttons */
-.container {
   padding-top: 50px;
   padding-bottom: 15px;
   margin: auto;
   text-align: center;
 }
 
+/* text-body -> style for intro-text */
+.text-body {
+  font-size: 14px;
+  line-height: 50px;
+  text-align: center;
+  letter-spacing: 1px;
+  color: #464646;
+  padding: 2px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* buttons(resume,experience,studies,contact) */
 .buttons {
-  padding: 30px;
+  padding: 35px;
   margin: auto;
 }
 
-/* port-container */
+/* port-container -> experience, studies and contact button style */
 .port-container {
   display: flex;
   justify-content: space-between;
@@ -91,57 +71,7 @@ body {
   padding-bottom: 100px;
 }
 
-/* w-cointainer */
-.w-container {
-  margin-left: auto;
-  margin-right: auto;
-  max-width: 940px;
-}
-.w-container:before,
-.w-container:after {
-  content: " ";
-  display: table;
-  grid-column-start: 1;
-  grid-row-start: 1;
-  grid-column-end: 2;
-  grid-row-end: 2;
-}
-.w-container:after {
-  clear: both;
-}
-
-/* navhome */
-.navhome {
-  position: relative;
-  z-index: 1000;
-}
-
-.navhome {
-  position: absolute;
-  left: 0%;
-  top: 0%;
-  right: 0%;
-  bottom: auto;
-}
-
-.navhome.inner {
-  position: fixed;
-  z-index: 998;
-  background-image: url("../images/main-background.jpg");
-  background-position: 100%;
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-
-/* div-block */
-.div-block {
-  display: flex;
-  width: 100%;
-  justify-content: center;
-  text-align: center;
-}
-
-/* boxes style */
+/* boxes of the port-container style */
 .box {
   width: 300px;
   padding: 25px;
@@ -195,7 +125,116 @@ body {
   background-color: rgb(109, 210, 109);
 }
 
-/* nav-name */
+/* contact form on main page*/
+.form {
+  color: rgb(89, 88, 88);
+  text-size-adjust: 17px;
+  letter-spacing: 7px;
+  text-transform: uppercase;
+  background-color: black;
+  padding: 10px;
+  text-align: center;
+}
+
+div.form {
+  margin: auto;
+  width: 300px;
+}
+
+.form:hover {
+  color: white;
+}
+
+/* social media icons on footer */
+.social-media {
+  color: rgb(89, 88, 88);
+}
+
+.social-media:hover {
+  color: rgb(239, 230, 230);
+}
+
+ion-icon {
+  width: 40px;
+  height: 40px;
+}
+
+footer {
+  display: flex;
+  background-image: url("../images/main-background.jpg");
+  position: relative;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 60px;
+  width: 100%;
+  border-top: 1px solid white;
+  justify-content: center;
+  align-items: center;
+}
+
+/* all links decoratin -> no underline  */
+a:link {
+  text-decoration: none;
+}
+a:visited {
+  text-decoration: none;
+}
+a:active {
+  text-decoration: none;
+}
+
+/* horizontal divider */
+.horizontal-divider {
+  background-color: black;
+  position: relative;
+  margin-top: 70px;
+  margin-bottom: 70px;
+  height: 3px;
+  width: 1200px;
+}
+
+/* section details -> descriptions about the studies, experiencea and resume */
+.section-details {
+  margin-top: 100px;
+  margin-bottom: 100px;
+  padding-top: 100px;
+}
+
+/* w-cointainer -> div where I framed the details and pictures from the experience, resume and studies pages*/
+.w-container {
+  margin: auto;
+  padding: auto;
+  max-width: 940px;
+}
+
+/* navhome -> navigation bar from the top of the page */
+.navhome {
+  position: absolute;
+  z-index: 1000;
+  left: 0px;
+  top: 0px;
+  right: 0px;
+}
+
+.navhome.inner {
+  position: fixed;
+  z-index: 998;
+  background-image: url("../images/main-background.jpg");
+  background-position: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+/* div-block -> main div top page */
+.div-block {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  text-align: center;
+}
+
+/* nav-name -> name logo */
 .nav-name {
   display: inline-block;
   height: 60px;
@@ -204,14 +243,14 @@ body {
   border-radius: 50%;
 }
 
-/* nav-menu */
+/* nav-menu -> menu links from top page */
 .nav-menu {
   float: right;
   padding: 20px;
   margin: auto;
 }
 
-/* nav-link and w-nav-link */
+/* nav-link and w-nav-link -> menu links style */
 .nav-link {
   width: 140px;
   height: 30px;
@@ -322,67 +361,6 @@ h5 {
   height: 350px;
 }
 
-/* social media icons */
-
-.social-media {
-  color: rgb(89, 88, 88);
-}
-
-.social-media:hover {
-  color: rgb(239, 230, 230);
-}
-
-ion-icon {
-  width: 40px;
-  height: 40px;
-}
-
-footer {
-  display: flex;
-  background-image: url("../images/main-background.jpg");
-  position: relative;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  height: 60px;
-  width: 100%;
-  border-top: 1px solid white;
-  justify-content: center;
-  align-items: center;
-}
-
-/* links-decoration-none  */
-
-a:link {
-  text-decoration: none;
-}
-a:visited {
-  text-decoration: none;
-}
-a:active {
-  text-decoration: none;
-}
-
-/* contact form main page*/
-.form {
-  color: rgb(89, 88, 88);
-  text-size-adjust: 17px;
-  letter-spacing: 7px;
-  text-transform: uppercase;
-  background-color: black;
-  padding: 10px;
-  text-align: center;
-}
-
-div.form {
-  margin: auto;
-  width: 300px;
-}
-
-.form:hover {
-  color: white;
-}
-
 /* contact form page */
 #logo-contact {
   width: 50px;
@@ -390,17 +368,23 @@ div.form {
   border-radius: 50%;
 }
 
-.contact-form {
-  background-image: url(../images/main-background.jpg);
-  align-items: center;
-}
-
+/* title of the page */
 .contact-label-title {
   color: white;
   font-size: 30px;
   line-height: 20px;
   text-align: center;
   letter-spacing: 3px;
+}
+
+/* text on contact page*/
+.text-contact {
+  color: white;
+  font-size: 18px;
+  line-height: normal;
+  text-align: center;
+  letter-spacing: 1px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 #label {
@@ -410,30 +394,73 @@ div.form {
 
 .contact-label {
   color: white;
-  font-size: 18px;
+  font-size: 14px;
   line-height: 30px;
   text-align: center;
   letter-spacing: 1px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* actual form -> text and fields */
+.forms {
+  background-color: hsla(0, 0%, 100%, 0.2);
+  margin: auto;
+  width: 900px;
+  height: 550px;
+  align-items: center;
+  justify-content: center;
 }
 
 .form1 {
   text-align: center;
-  align-items: center;
-  justify-content: center;
 }
 
 .set-contact {
   background-color: #cccbcb;
   color: rgb(78, 78, 84);
+  width: 250px;
+  height: 25px;
+  border: 2.5px solid rgb(95, 95, 95);
+  border-radius: 10px;
+}
+
+.set-contact::placeholder {
+  text-align: left;
+  letter-spacing: 1px;
+  font-size: 14px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.set-contact:hover{
+  background-color: rgb(174, 169, 169);
+  border: 3px solid darkcyan;
+}
+
+#textarea {
+  background-color: #cccbcb;
+  color: rgb(78, 78, 84);
+  margin: 10px;
+  border: 2.5px solid rgb(95, 95, 95);
+  border-radius: 10px;
+}
+
+#textarea::placeholder {
+  text-align: left;
+  letter-spacing: 1px;
+  font-size: 14px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .submit {
-  border: 1px solid black;
+  border: 2px solid black;
   color: black;
   background-color: #cccbcb;
+  border-radius: 5px;
+  height: 30px;
+  width: 150px;
 }
 
 .submit:hover {
   background-color: gray;
-  border: 2px solid black;
+  border: 3px solid darkcyan;
 }
