@@ -7,7 +7,11 @@
     <link href="css/style.css" rel="stylesheet" type="text/css" />
     <title>Contact page | Mălina Bucur</title>
   </head>
-  <body class="contact-form">
+  <body
+    class="contact-form"
+    background="./images/main-background.jpg"
+    onload="document.myForm.email.focus()"
+  >
     <div>
       <!-- go to main page -->
       <a href="index.html" class="brand">
@@ -17,130 +21,110 @@
 
     <!-- title -->
     <h1 class="contact-label-title">Contact Me</h1>
-    <div class="contact-label" id="label">
+    <div class="text-contact" id="label">
       Please fill out the required informations and I will get back to you very
       soon
     </div>
 
     <!-- the actual form with first name, last name, email, etc. -->
-    <form action="./contact.html" method="post" class="form1">
-      <label class="contact-label" for="fname">First name:</label>
-      <input
-        class="set-contact"
-        type="text"
-        placeholder="Enter your first name"
-        id="fname"
-        name="fname"
-        required
-      />
-      <br />
+    <div class="forms">
+      <form action="#" name="myForm" class="form1">
+        <label class="contact-label" for="fname"
+          >Full name:
+          <br />
+          <input
+            class="set-contact"
+            type="text"
+            placeholder="First name"
+            id="fname"
+            name="fname"
+            required
+          />
 
-      <label class="contact-label" for="lname">Last name:</label>
-      <input
-        class="set-contact"
-        type="text"
-        placeholder="Enter your last name"
-        id="lname"
-        name="lname"
-        required
-      />
-      <br />
+          <input
+            class="set-contact"
+            type="text"
+            placeholder="Last name"
+            name="fname"
+            required
+          />
+        </label>
+        <br />
 
-      <label class="contact-label" for="email">E-mail (@gmail.com):</label>
-      <input
-        class="set-contact"
-        type="email"
-        pattern=".+@gmail\.com"
-        placeholder="Enter your Email"
-        id="email"
-        name="email"
-        required
-      />
-      <br />
+        <label class="contact-label" for="email">E-mail (@gmail.com):</label>
+        <br />
+        <input
+          class="set-contact"
+          type="email"
+          pattern=".+@gmail\.com"
+          placeholder="Enter your Email"
+          id="email"
+          name="email"
+          required
+        />
+        <br />
 
-      <label class="contact-label" for="emailConfirm"
-        >E-mail confirmation:</label
-      >
-      <input
-        class="set-contact"
-        type="email"
-        pattern=".+@gmail\.com"
-        placeholder="Enter your Email again"
-        name="emailConfirm"
-        id="emailConfirm"
-      />
-      <br />
+        <label class="contact-label" for="emailConfirm"
+          >E-mail confirmation:</label
+        >
+        <br />
+        <input
+          class="set-contact"
+          type="email"
+          pattern=".+@gmail\.com"
+          placeholder="Enter your Email again"
+          name="emailConfirm"
+          id="emailConfirm"
+          required
+        />
+        <br />
 
-      <label class="contact-label" for="telephone">Telephone:</label>
-      <input
-        class="set-contact"
-        type="tel"
-        placeholder="Enter your phone no"
-        id="telephone"
-        name="telephone"
-        minlength="10"
-        maxlength="10"
-        title="Must contain only numbers(10)"
-        required
-      />
-      <br />
+        <label class="contact-label" for="telephone">Phone number:</label>
+        <br />
+        <input
+          class="set-contact"
+          type="tel"
+          placeholder="Enter your phone no"
+          id="telephone"
+          name="telephone"
+          minlength="10"
+          maxlength="10"
+          title="Must contain only numbers(10)"
+          required
+        />
+        <br />
 
-      <label class="contact-label" for="address"
-        >Address:
+        <label class="contact-label" for="address">Address:</label>
+        <br />
         <input
           class="set-contact"
           type="address"
-          placeholder="Street"
-          id="address"
-          name="address"
-          required
-        /><br />
-        <input
-          class="set-contact"
-          type="number"
-          placeholder="Number"
-          id="address"
-          name="address"
-          required
-        /><br />
-        <input
-          class="set-contact"
-          type="address"
-          placeholder="City"
-          id="address"
-          name="address"
-          required
-        /><br />
-        <input
-          class="set-contact"
-          type="address"
-          placeholder="County"
-          id="address"
-          name="address"
-          required
-        /><br />
-        <input
-          class="set-contact"
-          type="address"
-          placeholder="Zip code"
+          placeholder="City, Street, Number, Zip code"
           id="address"
           name="address"
           required
         />
-      </label>
-      <br />
+        <br />
 
-      <textarea
-        class="set-contact"
-        rows="4"
-        cols="25"
-        placeholder="Leave me a message.."
-        id="textarea"
-        name="textarea"
-      ></textarea>
-      <br />
+        <label class="contact-label">Message:</label>
+        <br />
+        <textarea
+          rows="8"
+          cols="50"
+          placeholder="Type here..."
+          id="textarea"
+          name="textarea"
+        ></textarea>
+        <br />
 
-      <input type="submit" value="Send message" class="submit" />
-    </form>
+        <input
+          type="submit"
+          value="Send message"
+          class="submit"
+          onclick="validateEmail(document.myForm.emailConfirm)"
+        />
+      </form>
+    </div>
+    <script src="script.js" defer></script>
   </body>
 </html>
